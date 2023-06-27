@@ -1,0 +1,35 @@
+/* extra small*/
+@media only screen and (max-width:600px) {
+    .container {
+     flex-wrap: wrap ;
+    }
+ }
+ /*small*/
+ @media only screen and (min-width:600px) {
+     .item-1 {
+         background-color: black;
+     }
+ }
+ /*medium*/
+ @media only screen and (min-width:768px) {
+     .item-1,.item-2 {
+         width: 100%;
+     }
+ }
+ /*large*/
+ @media only screen and (min-width:992px) {
+     
+ }
+ /*extra large*/
+ @media only screen and (min-width:1200px) {
+     
+ }
+.animation-two-of-six {
+    display: flex;
+    margin: auto;
+    
+}
+.animation-one,.animation-two {
+    width: 500px;
+    height: 500px;
+}
