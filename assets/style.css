@@ -196,3 +196,17 @@
         background: linear-gradient(to top, blue,transparent 30%);
     }
 }
+p {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2em;
+    animation: animtext 2s normal 2s 1 ;
+}
+@keyframes animtext {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-90deg);
+    }
+}
