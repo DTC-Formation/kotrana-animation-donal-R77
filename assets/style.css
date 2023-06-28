@@ -30,11 +30,12 @@
     justify-content: center;
     
 }
-.animation-one,.animation-two,.animation-three,.animation-four {
+.animation-one,.animation-two,.animation-three,.animation-four,.animation-five,.animation-six {
     width: 500px;
     height: 500px;
     background-color: transparent;
     border: 2px solid #887866;
+    margin-top:5px ;
 }
 .circle {
     width: 400px;
@@ -165,6 +166,33 @@
         height: 300px;
     }
     75% {
-        
+        top: 0;
+
+    }
+    100% {
+        top: 0;
+    }
+}
+.animation-four {
+    background:linear-gradient(to top  ,blue ,transparent 30% );
+    animation-name: just-move-it;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes just-move-it {
+    0% {
+        background: linear-gradient(to top, blue, transparent 30%);
+    }
+    25% {
+       background: linear-gradient( 15deg ,blue, transparent 40% );
+    }
+    50%{
+        background: linear-gradient(15deg , blue,transparent 50%);
+    }
+    75% {
+        background: linear-gradient(-7deg, blue, transparent 60%);
+    }
+    100% {
+        background: linear-gradient(to top, blue,transparent 30%);
     }
 }
