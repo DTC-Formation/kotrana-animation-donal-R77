@@ -41,7 +41,7 @@
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background: transparent;
+    background-color: yellow;
     border: 1px solid black;
     margin: auto;
     align-items: center;
@@ -109,7 +109,8 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: black;
+    background-color: transparent;
+    border: 1px solid black;
     margin: auto;
     animation-name: move-point;
     animation-duration: 6s;
@@ -135,6 +136,7 @@
     75% {
         top: 0;
         left: 200px;
+        background-color: red;
     }
     100% {
         top: 0;
@@ -208,5 +210,33 @@ p {
     }
     to {
         transform: rotate(-90deg);
+    }
+}
+.like {
+    background: radial-gradient(closest-side at 40px 40px, #3f87a6, #ebf8e1, #f69d3c);
+    animation-name: like-a-sun;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    width: 200px;
+    height: 200px;
+}
+@keyframes like-a-sun {
+    0% {
+        
+        background: radial-gradient(closest-side at 40px 40px, #3f87a6, #ebf8e1, #f69d3c);
+        
+    }
+    25% {
+        background: radial-gradient(closest-side at 50px 50px, #3f87a6, #ebf8e1, #f69d3c);
+    }
+    50% {
+        background: radial-gradient(closest-side at 60px 60px, #3f87a6, #ebf8e1, #f69d3c);
+    }
+    75% {
+        background: radial-gradient(closest-side at 70px 70px, #3f87a6, #ebf8e1, #f69d3c);
+    }
+    100% {
+       
+        background: radial-gradient(closest-side at 40px 40px, #3f87a6, #ebf8e1, #f69d3c);
     }
 }
