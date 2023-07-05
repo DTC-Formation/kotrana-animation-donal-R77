@@ -303,3 +303,46 @@ p {
         transform: rotate(360deg);
     }
 }
+.anim003 {
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.child3-point1,.child3-point2,.child3-point3 {
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    animation: loader-point .5s ease infinite alternate-reverse;
+
+}
+.child3-point1 {
+    animation-delay: .3s;
+}
+.child3-point2 {
+    animation-delay: .4s;
+}
+.child3-point3 {
+    animation-delay: .5s;
+}
+@keyframes loader-point {
+    from {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(10px);
+    }
+}
+
+.anim004 {
+    width: 500px;
+    border: 2px solid black
+}
+.child4 {
+
+}
