@@ -259,9 +259,9 @@ p {
     height: 50px;
     border-radius: 50%;
     background-color: #ebf8e1;
-    animation: move-square 4s infinite;
+    animation: move-circle 4s infinite;
 }
-@keyframes move-square {
+@keyframes move-circle {
     0% {
         transform: translate(0,0);
     }
